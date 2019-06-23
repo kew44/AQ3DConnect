@@ -3,8 +3,8 @@ const Server = require('./index');
 
 database()
   .then(() => {
-    Server(80);
-    console.log(`Server running @ localhost:80`);
+    Server(process.env.PORT);
+    console.log(`Server running @ localhost:${process.env.PORT}`);
   })
   .catch(error => console.log(`Initializing failed! Reason: ${error.message}`));
 
