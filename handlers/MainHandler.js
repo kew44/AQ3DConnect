@@ -26,7 +26,7 @@ exports.auth = async (request, reply) => {
     const psw = request.body.psw;
     try {
       const user = await UserModel.findOne({ uname });
-      if (user.password === psw) {
+      if (user.psw === psw) {
          reply.render('userboard.ejs', { user: uname });
        } else {
            reply.render('error.ejs', { user: uname})
