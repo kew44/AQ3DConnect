@@ -20,3 +20,17 @@ exports.addItem = async (request, reply) => {
 exports.login = async (request, reply) => {
     reply.render("login.ejs", { title: "Login | AQ3D"})
 }
+exports.auth = async (request, reply) => {
+    const uname = request.body.uname;
+    const psw = request.body.psw;
+    try {
+      const user = await Users.findOne({ uname });
+      if (user.password === psw) {
+         reply.render('userboard.ejs', { user: uname });
+       } else {
+           reply.render('error.ejs', { user: uname})
+      }
+     } catch (error) {
+        reply.render('error.ejs', { user: uname })
+   }
+}
