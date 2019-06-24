@@ -20,7 +20,7 @@ exports.addItem = async (request, reply) => {
 exports.login = async (request, reply) => {
     reply.render("login.ejs", { title: "Login | AQ3D"})
 }
-/*
+
 exports.auth = async (request, reply) => {
     const uname = request.body.uname;
     const psw = request.body.psw;
@@ -35,12 +35,4 @@ exports.auth = async (request, reply) => {
         reply.render('error.ejs', { user: uname })
    }
 }
-*/
-exports.auth = async (request, reply) => {
-    const uname = request.body.uname;
-    const psw = request.body.psw;
-    const req = request.body;
-    const data = await new UserModel(req);
-    await data.save();
-    reply.send(data);
-}
+
