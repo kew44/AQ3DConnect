@@ -39,7 +39,7 @@ exports.auth = async (request, reply) => {
 exports.signup = async (request, reply) => {
     reply.render("singup.ejs");
 }
-exports.signupAuth = (request, reply) => {
+exports.signupAuth = async (request, reply) => {
     const body = request.body;
     const data = await new UserModel(body);
     await data.save();
