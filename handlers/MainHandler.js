@@ -43,5 +43,5 @@ exports.signupAuth = async (request, reply) => {
     const body = request.body;
     const data = await new UserModel(body);
     await data.save();
-    reply.render("login.ejs");
+    reply.render("login.ejs", { title: "Signup | AQ3D" });
 }
