@@ -9,3 +9,4 @@ router.get('/signup', handler.signup);
 router.post('/signup', handler.signupAuth);
 
 module.exports = router;
+//export router module
