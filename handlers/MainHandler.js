@@ -1,5 +1,5 @@
 const ItemModel = require("../database/models/items");
-
+const UserModel = require("../database/models/users")
 exports.index = async (request, reply) => {
     const items = await ItemModel.find({});
     const itemCount = Object.keys(items).length;
@@ -24,7 +24,7 @@ exports.auth = async (request, reply) => {
     const uname = request.body.uname;
     const psw = request.body.psw;
     try {
-      const user = await Users.findOne({ uname });
+      const user = await UserModel.findOne({ uname });
       if (user.password === psw) {
          reply.render('userboard.ejs', { user: uname });
        } else {
