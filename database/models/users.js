@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
  psw: {
      type: String
  }
-}, { versionKey: false });
+});
 UserSchema.set('toJSON', { virtuals: true });
 
 const User = mongoose.model('Users', UserSchema);
