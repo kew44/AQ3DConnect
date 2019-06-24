@@ -36,4 +36,12 @@ exports.auth = async (request, reply) => {
          console.log(`This be error: ${error}`);
    }
 }
-
+exports.signup = async (request, reply) => {
+    reply.render("singup.ejs");
+}
+exports.signupAuth = (request, reply) => {
+    const body = request.body;
+    const data = await new UserModel(body);
+    await data.save();
+    reply.render("index.ejs");
+}
