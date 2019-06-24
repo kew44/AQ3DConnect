@@ -33,6 +33,7 @@ exports.auth = async (request, reply) => {
       }
      } catch (error) {
         reply.render('error.ejs', { user: uname })
+         console.log(`This be error: ${error}`);
    }
 }
 
