@@ -10,6 +10,6 @@ const UserSchema = new mongoose.Schema({
 }, { versionKey: false });
 UserSchema.set('toJSON', { virtuals: true });
 
-const User = mongoose.model('Users', USerSchema);
+const User = mongoose.model('Users', UserSchema);
 
-module.exports = Items;
+module.exports = User;
