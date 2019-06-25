@@ -13,7 +13,11 @@ exports.index = async (request, reply) => {
 }
 
 exports.addItem = async (request, reply) => {
-reply.send("Testing...");
+  reply.send("Testing...");
+  const itemData = request.body;
+  const modelData = await new ItemModel(itemData);
+  const saveData = await modelData.save()
+  console.log(saveData);
 }
 exports.login = async (request, reply) => {
     reply.render("login.ejs", { title: "Login | AQ3D"})
