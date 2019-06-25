@@ -55,6 +55,30 @@ body { background: darkred; }
   display: none;
   text-align: center;
 }
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
@@ -63,7 +87,12 @@ body { background: darkred; }
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
 
-<h1> <%= user %> </h1>
+<h1> <%= user %>'s profile </h1>
+<div class="btn-group">
+  <button>Apple</button>
+  <button>Samsung</button>
+  <button>Sony</button>
+</div>
 </div>
 
 <script>
