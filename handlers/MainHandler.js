@@ -13,9 +13,7 @@ exports.index = async (request, reply) => {
 }
 
 exports.addItem = async (request, reply) => {
-    const itemName = request.params.itemName;
-    const findItem = await ItemModel.findOne({ itemName });
-    console.log(findItem);
+reply.send("Testing...");
 }
 exports.login = async (request, reply) => {
     reply.render("login.ejs", { title: "Login | AQ3D"})
