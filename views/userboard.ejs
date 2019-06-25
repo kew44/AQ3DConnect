@@ -84,6 +84,69 @@ backgrounf-repeat: no-repeat;
 .btn-group button:hover {
   background-color: #3e8e41;
 }
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
@@ -94,26 +157,55 @@ backgrounf-repeat: no-repeat;
 
 <h1> <%= user %>'s profile </h1>
 <div class="btn-group" style="width:100%">
-  <button style="width:25%">Apple</button>
-  <button style="width:25%">Samsung</button>
-  <button style="width:25%">Sony</button>
-  <button style="width:25%">HTC</button>
+  <button style="width:25%">Item Database</button>
+  <button style="width:25%">Guild</button>
+  <button style="width:25%">Achievements</button>
+  <button style="width:25%">Contributors</button>
 </div>
 <br><br><br><br>
-
-<form action="/addItem" method="POST">
-
-<label for="itemName"><b>Item Name</b></label>
-<input type="text" placeholder="Item Name" name="itemName" required>
-<br>
-<label for="requiredItemLevel"><b>Required Item Level</b></label>
-<input type="text" placeholder="Required Item Level" name="requiredItemLevel" required>
-<br>
-<label for="itemDescription"><b>Item Description</b></label>
-<input type="text" placeholder="Item Description" name="itemDescription" required>
-<br>  
-<button type="submit">Login</button>
-</form>
+<div class="container">
+  <form action="/addItem">
+  <div class="row">
+    <div class="col-25">
+      <label for="itemName">Item Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="itemName" name="itemName" placeholder="Item Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="requiredItemLevel">Required Item Level</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="requiredItemLevel" name="requiredItemLevel" placeholder="Required Item Level">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="itemArea">Item Area</label>
+    </div>
+    <div class="col-75">
+      <select id="itemArea" name="itemArea">
+        <option value="australia">Greenguard</option>
+        <option value="canada">Doomwood</option>
+        <option value="usa">Ashfall</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="itemDescription">Item Description</label>
+    </div>
+    <div class="col-75">
+      <textarea id="itemDescription" name="itemDescription" placeholder="Write the item description located in the game." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
 </div>
 
 <script>
