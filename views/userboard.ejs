@@ -101,7 +101,19 @@ backgrounf-repeat: no-repeat;
 </div>
 <br><br><br><br>
 
-<center><input type="text">Item Name</input></center>
+<form action="/addItem" method="POST">
+
+<label for="itemName"><b>Item Name</b></label>
+<input type="text" placeholder="Item Name" name="itemName" required>
+          
+<label for="requiredItemLevel"><b>Required Item Level</b></label>
+<input type="text" placeholder="Required Item Level" name="requiredItemLevel" required>
+
+<label for="itemDescription"><b>Item Description</b></label>
+<input type="text" placeholder="Item Description" name="itemDescription" required>
+      
+<button type="submit">Login</button>
+</form>
 </div>
 
 <script>
