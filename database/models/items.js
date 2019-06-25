@@ -16,6 +16,12 @@ const ItemSchema = new mongoose.Schema({
   },
   itemNpc: {
       type: String
+  },
+  createdAt: {
+    type: Date
+  },
+  createdBy: {
+    type: String
   }
 });
 ItemSchema.set('toJSON', { virtuals: true });
