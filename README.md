@@ -1,5 +1,5 @@
 # AdventureQuest3D Connect - AQ3DConnect
-<img src="https://i.imgur.com/Hjvtoz3.png" height="200" align="right" alt="OnWave-Random">
+<img src="hhttps://ksr-ugc.imgix.net/assets/020/882/141/d173fd3beeb9fa21324a7307fcbc02f5_original.png?ixlib=rb-2.0.0&w=639&fit=max&v=1523665745&auto=format&gif-q=50&lossless=true&s=307ee8ac2314760f2eb22322b5795a75" height="200" align="right" alt="OnWave-Random">
 
 > AQ3DConnect is a <b>player</b> focused dashboard and online customizable platform with the <b>AQ3D</b> theme.
 
@@ -43,7 +43,7 @@ Early subscribers get once-in-a-lifetime perks!
 
 > Want to join our support server and meet the team?
 
-- [Xenial#1337](https://discord.gg/NsUjS5n)
+- [Discord Server](https://discord.gg/NsUjS5n)
 
 > Extra features
 
