@@ -9,14 +9,10 @@
 - 🔥 Are you a content creator? Showcase your work here! And do business too through out chat system!
 - ⚙️ Contribute to creating the first AQ3D dynamic, interactive and modern AQ3DWiki! As simple as typing an item name and description will do!
 - 💻 Web client, Discord client and Desktop client! (Windows users only for now.) 
-- 👥 Create your own guild, with the features you want. From backgrounds to server invites and more! Just request a feature and it will be added if it follows our guidelines!!\
+- 👥 Create your own guild, with the features you want. From backgrounds to server invites and more! Just request a feature and it will be added if it follows our guidelines!!
 
-## Usage
-
-```bash
-https://aq3d.info
-https://myguildname.aq3d.info (on development)
-https://discord.aq3d.info/ (Manage your Discord bot here)
+```
+Early subscribers get once-in-a-lifetime perks!
 ```
 
 ## Colaborators
@@ -37,13 +33,13 @@ https://discord.aq3d.info/ (Manage your Discord bot here)
 
 > Technical info
 
--AQ3DConnect has its own CDN server for faster responses and asset loading
--AQ3DConnect features its own API for developers to integrate in their Discord servers with custom-made bots
--AQ3DConnect offers a Discord bot with a lot of capabilities, Melodia. https://aq3d.info/get/melodia
+- AQ3DConnect has its own CDN server for faster responses and asset loading
+- AQ3DConnect features its own API for developers to integrate in their Discord servers with custom-made bots
+- AQ3DConnect offers a Discord bot with a lot of capabilities, Melodia. https://aq3d.info/get/melodia
 
 > Wish to contribute?
 
--Xenial#1337 (Discord)
+- Xenial#1337 (Discord)
 
 > Want to join our support server and meet the team?
 
@@ -51,8 +47,8 @@ https://discord.aq3d.info/ (Manage your Discord bot here)
 
 > Extra features
 
--Windows Client
--Mac Client
+- Windows Client
+- Mac Client
 
 ## Copyright
 
