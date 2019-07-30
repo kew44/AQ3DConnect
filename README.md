@@ -54,7 +54,7 @@ Early subscribers get once-in-a-lifetime perks!
 
 > Attention!
 
-<b> The content here referred to as AQ3D, AdventureQuest3D, AQ, AE as well as characters, names, areas, images referencing any of the before mentioned names belong to Artix Entertainment LLC; [Website](https://artix.com) and are in <u>NO</u> way affiliated with me. This is merely an unofficial community project</b>
+<b> The content here referred to as AQ3D, AdventureQuest3D, AQ, AE as well as characters, names, areas, images referencing any of the before mentioned names belong to Artix Entertainment LLC -[AE Website](https://artix.com) - and are in <u>NO</u> way affiliated with me. This is merely an unofficial community project</b>
 
 
 
